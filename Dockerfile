@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM mhart/alpine-node:6.2.0
 ADD rootfs /
-RUN apk --update add bash nodejs python shadow@testing && \
+RUN apk --update add bash python shadow@testing rsync && \
   rm -rf /var/cache/apk/*
