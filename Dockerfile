@@ -1,4 +1,4 @@
-FROM dsop/alpine-base:3.5
+FROM dsop/alpine-base
 
 RUN apk --update add nodejs && \
   rm -rf /var/cache/apk/*
